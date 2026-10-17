@@ -6,7 +6,7 @@ MyPill handles health data, so we treat security reports as a priority.
 
 Do **not** open a public issue. Email **security@<your-domain>** with:
 
-- what is affected (mobile app, API, firmware, device pairing, infrastructure)
+- what is affected
 - how to reproduce it
 - what an attacker could do with it
 
