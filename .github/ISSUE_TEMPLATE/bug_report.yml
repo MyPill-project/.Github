@@ -1,0 +1,49 @@
+name: Bug report
+description: Something doesn't work as expected
+labels: [bug]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Mobile app
+        - API or worker
+        - Firmware / device
+        - Infrastructure
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you saw, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: App version, firmware version, phone model, or commit.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Patient safety
+      options:
+        - label: This could make a dose be missed, given twice, or recorded wrongly
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Remove any personal or health data before pasting.
+      render: text
